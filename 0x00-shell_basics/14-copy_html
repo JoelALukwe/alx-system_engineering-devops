@@ -1,2 +1,2 @@
-ln -s /bin/ls _ls_
-cp -u *.html ..
+#!/bin/bash
+cp -u *.htm ..
