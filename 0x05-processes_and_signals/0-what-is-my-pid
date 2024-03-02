@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-0-what-is-my-pid echo $$
+#!/usr/bin/env/bash
+echo $$
