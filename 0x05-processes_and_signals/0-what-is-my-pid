@@ -1,1 +1,2 @@
-bash4$ echo $BASHPID
+#!/usr/bin/env bash
+echo $$
