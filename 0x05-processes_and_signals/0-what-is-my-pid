@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-echo $$
+root@1ea21832300d echo $$
