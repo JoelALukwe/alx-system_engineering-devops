@@ -1,5 +1,23 @@
-usr/bin/env bash
+#usr/bin/env bash
 #Bash script that displays the PID, along with the process name.
 #of processes whose name contain the word bash
-                   
-pgrep bash -l
+
+
+# Get a list of all running processes
+proc_list=$(find /proc -maxdepth 1 -type d -regex "^/proc/[0-9]+$" 2>/dev/null)
+
+# Iterate over each process
+for proc_dir in $proc_list; do
+    # Extract PID from the directory name
+    pid=$(basename $proc_dir)
+    
+    # Get the process name
+    proc_name=$(cat $proc_dir/comm 2>/dev/null)
+    
+    # Check if the process name contains "bash"
+    if [[ "$proc_name" == *"bash"* ]]; then
+        # Print the PID and process name
+        echo "PID: $pid, Process Name: $proc_name"
+    fi
+done
+
