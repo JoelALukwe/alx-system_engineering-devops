@@ -1,2 +1,3 @@
-#!/bin/bash
+#!/usr/bin/env bash
+#this command is for the script to display its own pid 
 echo $$
