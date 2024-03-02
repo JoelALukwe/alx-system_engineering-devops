@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-#this is task prints "to infinity and beyond on loop"
+#this task prints "to infinity and beyond on loop"
 #and sleeps at 2
 
-while true
-do 
-echo "to infinity and beyond"
-sleep 2
-done
+
+ while true; do echo 'to infinity and beyond'; sleep 2; done
