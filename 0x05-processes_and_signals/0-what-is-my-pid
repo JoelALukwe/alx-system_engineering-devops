@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-root@1ea21832300d echo $$
+0-what-is-my-pid echo $$
