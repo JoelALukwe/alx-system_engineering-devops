@@ -1,1 +1,1 @@
-root@1ea21832300d$ echo $$
+bash4$ echo $BASHPID
