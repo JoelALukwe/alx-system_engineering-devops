@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
+# Displays "To infinity and beyond" indefinitely with
+#+ a sleep 2 in between each iteration.
 
-#this task prints "to infinity and beyond on loop"
-#and sleeps at 2
-
-
- while true; do echo 'to infinity and beyond'; sleep 2; done
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
