@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Get the listening sockets using 'ss' command
+listening_sockets=$(ss -tlnp)
+
+# Extract information about listening sockets
+echo "Listening Ports:"
+echo "----------------"
+echo "PID     Program Name     Port"
+
+# Loop through each line of listening sockets
+while IFS= read -r line; do
+    # Extract PID, program name, and port
+    pid=$(echo "$line" | awk '{print $5}' | cut -d',' -f1)
+    program=$(echo "$line" | awk '{print $7}')
+    port=$(echo "$line" | awk '{print $4}' | cut -d':' -f2)
+
+    # Print PID, program name, and port
+    echo "$pid     $program     $port"
+done <<< "$listening_sockets"
+   
