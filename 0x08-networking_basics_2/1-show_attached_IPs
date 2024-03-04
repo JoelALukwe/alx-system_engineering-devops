@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
-# Displays all acive IPv4 addresses on the machine.
+#!/bin/bash
 
-if config | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
+# Retrieve IPv4 addresses using 'ifconfig' command
+ipv4_addresses=$(ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -d ' ' -f 2)
+
+# Print the IPv4 addresses
+echo "Active IPv4 addresses:"
+echo "$ipv4_addresses"
