@@ -1,4 +1,8 @@
-/usr/bin/env bash
+#!/usr/bin/env bash
 # Listens on port 98 on localhost.
 
 nc -l localhost 98
+
+# Print the welcome statement
+echo "Hello world"
+echo "test"
