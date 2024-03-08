@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# this file will display "Best School" and it will loop it 10 times.
+
+count=0
+
+unti [ $count -eq 10 ]
+do
+echo "Best School"
+((count++))
+done
