@@ -1,5 +1,5 @@
 #!/usr/bin/env  bash
-# this will display the exact 12 hr and 59 min min time.
+# this will display the exact 12 hour and 59 minutes time.
 # after it will display the hours from 0 to 12
 # lastly minutes will be displayed from 1 to 59
 
