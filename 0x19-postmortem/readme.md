@@ -7,7 +7,7 @@ Postmortem Report: The Great Cache Apocalypse 🧠💥
 🧩 Root Cause: A sneaky memory leak 🕳️ in our latest, supposedly “improved” caching mechanism, which ended up hogging resources like a black hole 🌌.
 
 
-🕵️‍♂️ The Timeline: A Journey Through the Chaos**
+🕵️‍♂️ The Timeline: A Journey Through the Chaos
 
 -10:15 AM: The alert sirens go off 🚨—memory consumption is skyrocketing, and response times are in free fall 🎢.
   
