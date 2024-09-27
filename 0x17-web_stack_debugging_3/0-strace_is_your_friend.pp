@@ -1,2 +1,5 @@
-sudo  apt-get install -y ruby
-sudo  gem install puppet-lint -v 2.1.1
+# setting fixed at Wordpress
+exec { 'settingPress':
+  command  => 'sed -i "s/\b.phpp\b/.php/g" /var/www/html/wp-settings.php',
+  provider => shell,
+}
